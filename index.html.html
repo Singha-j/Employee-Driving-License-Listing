@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- [ส่วนสำคัญ] ข้อมูลที่จะไปปรากฏเป็นพรีวิวใน Line / Facebook / Messenger -->
+    <meta property="og:title" content="Employee Driving License Listing | AirAsia">
+    <meta property="og:description" content="ระบบสำหรับแสดงรายชื่อพนักงานที่ถือครองใบอนุญาตขับขี่ และติดตามสถานะบัตรอนุญาตขับขี่ของพนักงาน">
+    <!-- URL รูปโลโก้แอร์เอเชีย -->
+    <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/f/f5/AirAsia_Logo.svg">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="AirAsia Internal Support">
+
+    <title>Employee Driving License Listing | AirAsia</title>
+    
+    <style>
+        body { 
+            font-family: 'Inter', sans-serif; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            height: 100vh; 
+            margin: 0; 
+            background: #f8fafc; 
+        }
+        .box { 
+            text-align: center; 
+            padding: 2.5rem; 
+            background: white; 
+            border-radius: 2.5rem; 
+            box-shadow: 0 15px 35px rgba(0,0,0,0.08); 
+            max-width: 380px; 
+            border: 1px solid #f1f5f9; 
+        }
+        .loader { 
+            border: 4px solid #f3f3f3; 
+            border-top: 4px solid #E11922; 
+            border-radius: 50%; 
+            width: 45px; 
+            height: 45px; 
+            animation: spin 1s linear infinite; 
+            margin: 0 auto 1.5rem; 
+        }
+        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+        h2 { 
+            margin: 0; 
+            font-size: 1.4rem; 
+            color: #1e293b; 
+            font-weight: 800; 
+            letter-spacing: -0.025em; 
+            text-transform: uppercase;
+        }
+        p { 
+            font-size: 0.85rem; 
+            color: #64748b; 
+            margin-top: 0.75rem; 
+            line-height: 1.6; 
+        }
+        .footer-note { 
+            font-size: 0.7rem; 
+            color: #94a3b8; 
+            margin-top: 2rem; 
+            font-style: italic; 
+        }
+    </style>
+
+    <script>
+        // --------------------------------------------------------------------------------------
+        // [โปรดตรวจสอบ] ลิงก์จริงที่ได้จาก Google Apps Script (Deploy ล่าสุด)
+        // --------------------------------------------------------------------------------------
+        const REDIRECT_URL = "https://script.google.com/a/macros/airasia.com/s/AKfycby5PgNaQ1r92nikp4ygC9U7t2nTMnbNP-VqX6E4W25sDYLU_nm_VzGhogSzWAyDLROu/exec";
+
+        window.onload = function() {
+            // ดีดไปยังหน้าแอปจริงหลังจากแสดงหน้าโหลด 0.6 วินาที
+            setTimeout(() => {
+                window.location.replace(REDIRECT_URL);
+            }, 600);
+        };
+    </script>
+</head>
+<body>
+    <div class="box">
+        <div class="loader"></div>
+        <h2>AIRASIA</h2>
+        <p>กำลังนำคุณเข้าสู่ระบบ...<br><strong>Employee Driving License Listing</strong></p>
+        <div class="footer-note">Ramp Support Team Internal System</div>
+    </div>
+</body>
+</html>
